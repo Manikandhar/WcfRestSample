@@ -4,3 +4,6 @@ G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.c
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.dll
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.pdb
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\WcfRestExample.dll.config
+G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\MySql.Data.dll
+G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\Newtonsoft.Json.dll
+G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\Newtonsoft.Json.xml

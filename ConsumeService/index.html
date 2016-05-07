@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Table data</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <table id="tblData">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="Scripts/jquery-2.2.3.js"></script>
+    <script>
+        (function ($) {
+
+            $(document).ready(function () {
+
+                $.ajax({
+                    url: 'http://localhost:1126/product/GetTable',
+                    crossDomain: true,
+                    dataType: 'json',
+                    success: function (response) {
+                        try {
+                            if (response) {
+
+                                var data = JSON.parse(response)['actors'];
+                                var actorKeys = Object.getOwnPropertyNames(data[0]);
+                                var headers = $.map(actorKeys, function (key) {
+                                    return "<th>" + key + "</th>";
+                                });
+                                $('#tblData>thead>tr').html(headers);
+
+                                var rows = $.map(data, function (item) {
+                                    var tds = $.map(actorKeys, function (key) {
+                                        return "<td>" + item[key] + "</td>";
+                                    });
+                                    return "<tr>" + tds + "</tr>";
+                                });
+
+                                $('#tblData>tbody').html(rows);
+
+                            }
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
+                });
+
+            });
+
+        })(jQuery);
+    </script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -25,6 +26,10 @@ namespace WcfRestExample {
         [OperationContract]
         [WebInvoke(Method = "DELETE", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "Delete/{id}")]
         string DeleteProduct(string id);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "GetTable")]
+        string GetDataSet();
 
     }
 
