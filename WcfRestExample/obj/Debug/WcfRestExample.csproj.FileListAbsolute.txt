@@ -3,3 +3,4 @@ G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\WcfRestExample.pdb
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.csprojResolveAssemblyReference.cache
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.dll
 G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\obj\Debug\WcfRestExample.pdb
+G:\ProjectsAndPractices\WcfRestExample\WcfRestExample\bin\WcfRestExample.dll.config
